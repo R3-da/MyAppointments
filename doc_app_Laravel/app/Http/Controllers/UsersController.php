@@ -56,26 +56,26 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function login(Request $reqeust)
+    public function login(Request $request)
     {
         //validate incoming inputs
-        $reqeust->validate([
+        $request->validate([
             'email'=>'required|email',
             'password'=>'required',
         ]);
 
         //check matching user
-        $user = User::where('email', $reqeust->email)->first();
+        $user = User::where('email', $request->email)->first();
 
         //check password
-        if(!$user || ! Hash::check($reqeust->password, $user->password)){
+        if(!$user || ! Hash::check($request->password, $user->password)){
             throw ValidationException::withMessages([
                 'email'=>['The provided credentials are incorrect'],
             ]);
         }
 
         //then return generated token
-        return $user->createToken($reqeust->email)->plainTextToken;
+        return $user->createToken($request->email)->plainTextToken;
     }
 
     /**

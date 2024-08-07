@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/windows/flutter"
+  "cmake.sourceDirectory": "${workspaceFolder}/windows/flutter",
+  "dart.flutterSdkPath": ".fvm/versions/3.16.5"
 }
