@@ -16,7 +16,7 @@ return new class extends Migration
         //add new table for appointments
         Schema::create('appointments', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedInteger('doc_id');
             $table->string('date');
             $table->string('day');
