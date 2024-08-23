@@ -87,15 +87,15 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.person,
                               color: Colors.blueAccent[400],
-                              size: 35,
+                              size: 30,
                             ),
                             const SizedBox(
-                              width: 20,
+                              width: 10,
                             ),
                             TextButton(
                               onPressed: () {},
                               child: const Text(
-                                "Profile",
+                                "Account",
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -109,10 +109,10 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.history,
                               color: Colors.blueAccent[400],
-                              size: 35,
+                              size: 30,
                             ),
                             const SizedBox(
-                              width: 20,
+                              width: 10,
                             ),
                             TextButton(
                               onPressed: () {},
@@ -131,10 +131,10 @@ class _ProfilePageState extends State<ProfilePage> {
                             Icon(
                               Icons.logout_outlined,
                               color: Colors.redAccent[200],
-                              size: 35,
+                              size: 30,
                             ),
                             const SizedBox(
-                              width: 20,
+                              width: 10,
                             ),
                             TextButton(
                               onPressed: () async {

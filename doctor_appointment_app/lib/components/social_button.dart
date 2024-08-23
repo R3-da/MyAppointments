@@ -12,7 +12,7 @@ class SocialButton extends StatelessWidget {
     return OutlinedButton(
       style: OutlinedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 15),
-        side: const BorderSide(width: 1, color: Colors.black),
+        side: const BorderSide(width: 1, color: Color.fromARGB(50, 0, 0, 0)),
       ),
       onPressed: () {},
       child: SizedBox(
@@ -20,10 +20,14 @@ class SocialButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Image.asset(
-              'assets/$social.png',
-              width: 40,
-              height: 40,
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                  vertical: 5), // Adjust vertical padding as needed
+              child: Image.asset(
+                'assets/$social.png',
+                width: 30,
+                height: 30,
+              ),
             ),
           ],
         ),
