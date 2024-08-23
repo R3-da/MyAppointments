@@ -138,6 +138,7 @@ class UsersController extends Controller
      */
     public function logout(){
         $user = Auth::user();
+        // TODO: fix currentAccessToken error
         $user->currentAccessToken()->delete();
 
         return response()->json([

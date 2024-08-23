@@ -25,12 +25,6 @@ class SocialButton extends StatelessWidget {
               width: 40,
               height: 40,
             ),
-            Text(
-              social.toUpperCase(),
-              style: const TextStyle(
-                color: Colors.black,
-              ),
-            ),
           ],
         ),
       ),

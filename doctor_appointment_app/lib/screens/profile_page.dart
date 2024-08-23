@@ -66,7 +66,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 margin: const EdgeInsets.fromLTRB(0, 45, 0, 0),
                 child: SizedBox(
                   width: 300,
-                  height: 220,
+                  height: 210,
                   child: Padding(
                     padding: const EdgeInsets.all(10),
                     child: Column(
@@ -97,7 +97,6 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: const Text(
                                 "Profile",
                                 style: TextStyle(
-                                  color: Config.primaryColor,
                                   fontSize: 15,
                                 ),
                               ),
@@ -109,7 +108,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           children: [
                             Icon(
                               Icons.history,
-                              color: Colors.yellowAccent[400],
+                              color: Colors.blueAccent[400],
                               size: 35,
                             ),
                             const SizedBox(
@@ -120,7 +119,6 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: const Text(
                                 "History",
                                 style: TextStyle(
-                                  color: Config.primaryColor,
                                   fontSize: 15,
                                 ),
                               ),
@@ -132,7 +130,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           children: [
                             Icon(
                               Icons.logout_outlined,
-                              color: Colors.lightGreen[400],
+                              color: Colors.redAccent[200],
                               size: 35,
                             ),
                             const SizedBox(
@@ -164,7 +162,6 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: const Text(
                                 "Logout",
                                 style: TextStyle(
-                                  color: Config.primaryColor,
                                   fontSize: 15,
                                 ),
                               ),
