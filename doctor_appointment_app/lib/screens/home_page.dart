@@ -19,28 +19,28 @@ class _HomePageState extends State<HomePage> {
   List<dynamic> favList = [];
   List<Map<String, dynamic>> medCat = [
     {
-      "icon": FontAwesomeIcons.userDoctor,
-      "category": "General",
+      "icon": FontAwesomeIcons.one,
+      "category": "Category 1",
     },
     {
-      "icon": FontAwesomeIcons.heartPulse,
-      "category": "Cardiology",
+      "icon": FontAwesomeIcons.two,
+      "category": "Category 2",
     },
     {
-      "icon": FontAwesomeIcons.lungs,
-      "category": "Respirations",
+      "icon": FontAwesomeIcons.three,
+      "category": "Category 3",
     },
     {
-      "icon": FontAwesomeIcons.hand,
-      "category": "Dermatology",
+      "icon": FontAwesomeIcons.four,
+      "category": "Category 4",
     },
     {
-      "icon": FontAwesomeIcons.personPregnant,
-      "category": "Gynecology",
+      "icon": FontAwesomeIcons.five,
+      "category": "Category 5",
     },
     {
-      "icon": FontAwesomeIcons.teeth,
-      "category": "Dental",
+      "icon": FontAwesomeIcons.six,
+      "category": "Category 6",
     },
   ];
 
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                       Config.spaceSmall,
                       const Text(
-                        'Top Doctors',
+                        'Top Admins',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,

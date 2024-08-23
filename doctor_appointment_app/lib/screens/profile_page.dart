@@ -6,7 +6,7 @@ import "package:shared_preferences/shared_preferences.dart";
 import "../providers/dio_provider.dart";
 
 class ProfilePage extends StatefulWidget {
-  ProfilePage({Key? key}) : super(key: key);
+  const ProfilePage({Key? key}) : super(key: key);
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
@@ -22,8 +22,8 @@ class _ProfilePageState extends State<ProfilePage> {
           child: Container(
             width: double.infinity,
             color: Config.primaryColor,
-            child: Column(
-              children: const <Widget>[
+            child: const Column(
+              children: <Widget>[
                 SizedBox(
                   height: 110,
                 ),
@@ -60,12 +60,13 @@ class _ProfilePageState extends State<ProfilePage> {
           flex: 5,
           child: Container(
             color: Colors.grey[200],
-            child: Center(
+            child: Align(
+              alignment: Alignment.topCenter,
               child: Card(
                 margin: const EdgeInsets.fromLTRB(0, 45, 0, 0),
-                child: Container(
+                child: SizedBox(
                   width: 300,
-                  height: 250,
+                  height: 220,
                   child: Padding(
                     padding: const EdgeInsets.all(10),
                     child: Column(
@@ -103,7 +104,6 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                           ],
                         ),
-                        Config.spaceSmall,
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -127,7 +127,6 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                           ],
                         ),
-                        Config.spaceSmall,
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
