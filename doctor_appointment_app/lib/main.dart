@@ -38,12 +38,12 @@ class MyApp extends StatelessWidget {
             prefixIconColor: Colors.black38,
           ),
           scaffoldBackgroundColor: Colors.white,
-          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
             backgroundColor: Config.primaryColor,
             selectedItemColor: Colors.white,
             showSelectedLabels: true,
             showUnselectedLabels: false,
-            unselectedItemColor: Colors.grey.shade700,
+            unselectedItemColor: Color.fromARGB(150, 255, 255, 255),
             elevation: 10,
             type: BottomNavigationBarType.fixed,
           ),
