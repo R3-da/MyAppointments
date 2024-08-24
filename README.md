@@ -1,9 +1,7 @@
 # Flutter-Doctor-Appointment-App-With-Laravel
-This is about building a Doctor Appointment App with using Laravel as Backed and Dashboard. The main idea of this app is allow users to make an appointment with the doctors using mobile app. And, the major features will be demonstrated in the following videos in this series, such as Laravel Dashboard, make appointment with registered doctor, view doctor's details, rating and feedback submission and etc.
+This is about building an Appointment App with using Laravel as Backed and Dashboard. The main idea of this app is allow users to make appointments using mobile app, make appointment with registered admins, view admins's details, rating and feedback submission and etc.
 
 # Preview
-
-https://youtu.be/rHjtCei-mUs
 
 # Install
 
@@ -18,4 +16,3 @@ Or refer to the demo video listed below
 
 # Youtube Videos
 
-Youtube Playlist : https://www.youtube.com/watch?v=G2vfT9cFENQ&list=PLU6Jd5r98RCnwTpGjREBhAtASx6Cem_EZ
